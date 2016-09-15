@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p>buzzkho</p>
+    <title>
+        Buzz Kho
+    </title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+
+<script>
+                            window.fbAsyncInit = function() {
+                                FB.init({
+                                appId      : '1013082122147501',
+                                xfbml      : true,
+                                version    : 'v2.7'
+                                });
+                                FB.ui(
+                            {
+                            method: 'share',
+                            href: 'https://developers.facebook.com/docs/'
+                            }, function(response){});
+                            };
+
+                            (function(d, s, id){
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) {return;}
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                            </script>
+
+                            <div
+                            class="fb-like"
+                            data-share="true"
+                            data-width="450"
+                            data-show-faces="true">
+                            </div>
+
+
+
+<body>
+                            <!--This is just the comment bro-->
+                            <h1>Buzz Kho</h1>
+                            <div id = "cafesnack"> 
+                                <img src="./css/cafesnack.jpg" id="sub_img" alt="" />
+                                    <div id="content">
+                                        <hl>Whadduuupupppp</hl>
+                                    </div>
+                            </div>
+                            <p class=firstParagraph> Wassssuppp </p>
+                            <p class=intro>Hi My name is Buzz Kho</p>
+                            <a href="http://www.microsoft.com">Click this for a link!</a>
+
+                            <h2>My favourite fruit</h2>
+                            <ol>
+                                <li>Apple</li>
+                                <li>Banana</li>
+                            </ol>
+
+                            <h3>My favourite movies</h3>
+                            <ul>
+                                <li>Batman</li>
+                                <li>Interstella</li>
+                            </ul>
+
+                            <img src="./css/naver.ico" alt="naver.com">
+
+                            <button id = randomword onclick="RandomWord()">Generate random word</button>
+
+
+
+                            
+
+
+</body>
+</html>
